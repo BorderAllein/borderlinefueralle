@@ -5,7 +5,18 @@ const root = __dirname + '/';
 const { CATS, A: A1 } = require('./content/articles.cjs');
 const { A2, GLOSS } = require('./content/articles2.cjs');
 const today = new Date().toISOString().slice(0, 10);
-const A = A1.concat(A2).filter((a) => !a.publishedAt || a.publishedAt <= today);
+const { A3 } = require('./content/articles3.cjs');
+const { A4 } = require('./content/articles4.cjs');
+const A = A1.concat(A2, A3, A4).filter((a) => !a.publishedAt || a.publishedAt <= today).sort((x, y) => (x.publishedAt || '2026-11-09').localeCompare(y.publishedAt || '2026-11-09'));
+const PUB = (a) => a.publishedAt || '2026-11-09';
+const dDe = (d) => d.split('-').reverse().join('.');
+const plain = (h) => h.replace(/<\/(p|li|tr|h2|h3|div)>/g, '\n').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim();
+const NET = ['https://cogether.de/', 'https://cogether-software.de/', 'https://business.cogether.de/', 'https://adhsbegleitung.de/', 'https://guidanceobservatory.com/', 'https://borderallein.de/podcast/', 'https://gedankenkotze.de/'];
+const HOWTO = {
+  'therapieplatz-finden': ['Therapieplatz finden: von der Sprechstunde zur Therapie', [['Sprechstunde nutzen', 'Termin in einer psychotherapeutischen Sprechstunde vereinbaren, sie dient dem Kennenlernen und Abklären.'], ['Termin über 116117', 'Praxis online über psychotherapiesuche.116117.de suchen oder die Terminservicestelle unter 116117 anrufen.'], ['Akutbehandlung', 'Bei Bedarf bis zu 12 Gespräche ohne Antrag direkt nach der Sprechstunde.'], ['Probesitzungen und Antrag', 'In probatorischen Sitzungen kennenlernen, dann Antrag bei der Krankenkasse für Kurz- oder Langzeittherapie stellen.']]],
+  'reha-borderline-antrag': ['Reha bei psychischer Erkrankung beantragen', [['Mit Ärztin oder Therapeutin sprechen', 'Reha-Bedarf besprechen, die Fachärztin oder der Facharzt empfiehlt die Maßnahme.'], ['Antrag und Befund vorbereiten', 'Sozialdienst oder Kranken- beziehungsweise Rentenversicherung unterstützen bei der Antragstellung.'], ['Antrag einreichen', 'Antrag bei Renten- oder Krankenversicherung einreichen, die Prüfung dauert mehrere Wochen.']]],
+  'erwerbsminderungsrente-borderline': ['Erwerbsminderungsrente beantragen', [['Beratung einholen', 'Beratungstermin bei der Deutschen Rentenversicherung vereinbaren.'], ['Leistungsvermögen klären', 'Mit behandelnder Ärztin oder Therapeut Befunde und Leistungsvermögen besprechen.'], ['Antrag stellen', 'Antrag bei der Rentenversicherung stellen, die Reha-Möglichkeiten, ärztliche Unterlagen und gegebenenfalls Gutachten prüft.']]],
+};
 const wr = (f, t) => { fs.mkdirSync(path.dirname(root + f), { recursive: true }); fs.writeFileSync(root + f, t); };
 const B = 'https://xn--borderlinefralle-tzb.de';
 const BRAND = 'Borderline für alle';
@@ -18,10 +29,10 @@ const artBy = Object.fromEntries(A.map((a) => [a.slug, a]));
 const SEARCH_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
 const NAV = [['/thema/erkennen/', 'Erkennen'], ['/thema/diagnose/', 'Diagnose'], ['/thema/behandlung/', 'Behandlung'], ['/thema/beziehungen/', 'Angehörige'], ['/thema/hilfe/', 'Hilfe finden'], ['/test/', 'Selbsttest']];
 
-function layout({ p, title, desc, schema = [], noindex = false, body }) {
+function layout({ p, title, desc, schema = [], noindex = false, body, article = null }) {
   const url = B + p;
   const graph = [
-    { '@type': 'Organization', '@id': B + '/#org', name: BRAND, url: B + '/', logo: B + '/assets/logo.svg', parentOrganization: { '@type': 'Organization', name: 'BA Entertainment', address: { '@type': 'PostalAddress', streetAddress: 'Alleestraße 15', postalCode: '42781', addressLocality: 'Haan', addressCountry: 'DE' } } },
+    { '@type': 'Organization', '@id': B + '/#org', name: BRAND, url: B + '/', logo: { '@type': 'ImageObject', url: B + '/assets/og.png', width: 1200, height: 630 }, sameAs: NET, knowsAbout: ['Borderline-Persönlichkeitsstörung', 'emotional instabile Persönlichkeitsstörung', 'Dialektisch-behaviorale Therapie', 'Psychotherapie', 'Angehörige psychisch erkrankter Menschen'], parentOrganization: { '@type': 'Organization', name: 'BA Entertainment', address: { '@type': 'PostalAddress', streetAddress: 'Alleestraße 15', postalCode: '42781', addressLocality: 'Haan', addressCountry: 'DE' } } },
     { '@type': 'WebSite', '@id': B + '/#website', url: B + '/', name: BRAND, inLanguage: 'de-DE', publisher: { '@id': B + '/#org' }, potentialAction: { '@type': 'SearchAction', target: B + '/?q={q}', 'query-input': 'required name=q' } },
     ...schema,
   ];
@@ -32,15 +43,15 @@ function layout({ p, title, desc, schema = [], noindex = false, body }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-${noindex ? '<meta name="robots" content="noindex">\n' : '<meta name="robots" content="index, follow, max-image-preview:large">\n'}<meta property="og:locale" content="de_DE"><meta property="og:type" content="website"><meta property="og:site_name" content="${BRAND}">
+${noindex ? '<meta name="robots" content="noindex">\n' : '<meta name="robots" content="index, follow, max-image-preview:large">\n'}<meta name="author" content="Redaktion ${BRAND}"><meta property="og:locale" content="de_DE"><meta property="og:type" content="${article ? 'article' : 'website'}">${article ? `<meta property="article:published_time" content="${article.pub}"><meta property="article:modified_time" content="${article.mod}"><meta property="article:section" content="${esc(article.section)}">` : ''}<meta property="og:site_name" content="${BRAND}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${url}">
-<meta property="og:image" content="${B}/assets/og.png"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="${B}/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="${BRAND}: Wissen zur Borderline-Persönlichkeitsstörung"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0E2A47">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="canonical" href="${url}">
+<link rel="canonical" href="${url}"><link rel="alternate" hreflang="de" href="${url}"><link rel="alternate" type="application/rss+xml" title="${BRAND}" href="${B}/feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=2"><link rel="stylesheet" href="/assets/test.css?v=1">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><link rel="preload" href="/assets/site.css?v=3" as="style">
+<link rel="stylesheet" href="/assets/site.css?v=3"><link rel="stylesheet" href="/assets/test.css?v=1">
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>
 <script src="/assets/site.js?v=1" defer></script>
 </head>
@@ -161,11 +172,12 @@ for (const a of A) {
   const bc = [['/', 'Start'], [`/thema/${c.slug}/`, c.name], [`/artikel/${a.slug}/`, a.title]];
   const rel = a.related.map((s) => artBy[s]).filter(Boolean);
   layout({
-    p: `/artikel/${a.slug}/`, title: `${a.title} | ${BRAND}`, desc: a.desc,
+    p: `/artikel/${a.slug}/`, title: `${a.title} | ${BRAND}`, desc: a.desc, article: { pub: PUB(a), mod: a.updated || PUB(a), section: c.name },
     schema: [bcSchema(bc),
-      { '@type': 'Article', headline: a.title, description: a.desc, inLanguage: 'de-DE', datePublished: a.publishedAt || DATE, dateModified: DATE, author: { '@id': B + '/#org' }, publisher: { '@id': B + '/#org' }, mainEntityOfPage: `${B}/artikel/${a.slug}/`, about: { '@type': 'MedicalCondition', name: 'Borderline-Persönlichkeitsstörung (emotional instabile Persönlichkeitsstörung)' }, citation: a.sources.map((s) => s.u) },
-      { '@type': 'FAQPage', mainEntity: a.faq.map(([q, an]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: an } })) }],
-    body: `<section class="ph"><div class="wrap">${crumbs(bc)}<span class="eyebrow">${c.name}</span><h1>${esc(a.title)}</h1><div class="meta"><span><b>Redaktion</b> ${BRAND}</span><span>Aktualisiert: 09.11.2026</span><span>${a.readMin} Min. Lesezeit</span></div></div></section>
+      { '@type': 'Article', headline: a.title, description: a.desc, inLanguage: 'de-DE', datePublished: PUB(a), dateModified: a.updated || PUB(a), articleSection: c.name, image: B + '/assets/og.png', isAccessibleForFree: true, wordCount: plain(a.sections.map((x) => x[2]).join(' ')).split(/\s+/).length, keywords: [a.title, c.name, 'Borderline', 'Borderline-Persönlichkeitsstörung'].join(', '), speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.short p'] }, author: { '@id': B + '/#org' }, publisher: { '@id': B + '/#org' }, mainEntityOfPage: `${B}/artikel/${a.slug}/`, about: { '@type': 'MedicalCondition', name: 'Borderline-Persönlichkeitsstörung (emotional instabile Persönlichkeitsstörung)' }, citation: a.sources.map((s) => s.u) },
+      { '@type': 'FAQPage', mainEntity: a.faq.map(([q, an]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: an } })) },
+      ...(HOWTO[a.slug] ? [{ '@type': 'HowTo', name: HOWTO[a.slug][0], step: HOWTO[a.slug][1].map(([n, t], i) => ({ '@type': 'HowToStep', position: i + 1, name: n, text: t })) }] : [])],
+    body: `<section class="ph"><div class="wrap">${crumbs(bc)}<span class="eyebrow">${c.name}</span><h1>${esc(a.title)}</h1><div class="meta"><span><b>Redaktion</b> ${BRAND}</span><span>Veröffentlicht: <time datetime="${PUB(a)}">${dDe(PUB(a))}</time></span><span>Aktualisiert: <time datetime="${a.updated || PUB(a)}">${dDe(a.updated || PUB(a))}</time></span><span>${a.readMin} Min. Lesezeit</span></div></div></section>
 <div class="wrap layout">
   <article class="prose">
     <div class="short"><b>Kurz gesagt</b><p>${esc(a.short)}</p></div>
@@ -174,7 +186,7 @@ for (const a of A) {
     <h2 id="fragen">Häufige Fragen</h2>
     ${faqHtml(a.faq)}
     <h2 id="quellen">Quellen</h2>
-    <div class="src"><ol>${a.sources.map((s) => `<li><a href="${s.u}" rel="noopener" target="_blank">${esc(s.t)}</a></li>`).join('')}</ol><p>Alle Angaben beziehen sich auf den Stand der Quellen am 09.11.2026. Fehler entdeckt? <a href="/kontakt/">Bitte melde ihn uns.</a></p></div>
+    <div class="src"><ol>${a.sources.map((s) => `<li><a href="${s.u}" rel="noopener" target="_blank">${esc(s.t)}</a></li>`).join('')}</ol><p>Alle Angaben beziehen sich auf den Stand der Quellen am ${dDe(a.updated || PUB(a))}. Fehler entdeckt? <a href="/kontakt/">Bitte melde ihn uns.</a></p></div>
     <div class="author"><img src="/assets/logo.svg" alt="" width="56" height="56" loading="lazy"><div><h4>Redaktion ${BRAND}</h4><p>Die Artikel werden aus den genannten Fachquellen erstellt. Wir stellen keine Diagnosen und geben keine Behandlungsempfehlungen für Einzelfälle. <a href="/redaktion/">So arbeiten wir</a>.</p></div></div>
     <p class="disc">Dieser Artikel dient der Information. Er ersetzt keine Diagnose, keine ärztliche und keine psychotherapeutische Behandlung. Bei akuter Krise: Telefonseelsorge 116 123 (kostenfrei), ärztlicher Bereitschaftsdienst 116 117, Notruf 112.</p>
     ${cgBlock(a)}
@@ -191,7 +203,7 @@ for (const a of A) {
   const bc = [['/', 'Start'], ['/test/', 'Borderline-Selbsttest']];
   layout({ p: '/test/', title: 'Borderline-Selbsttest: ausführliche Orientierung, keine Diagnose | Borderline für alle',
     desc: 'Ausführlicher Borderline-Selbsttest mit 40 Aussagen zu den neun Kriterien: anonym, im Browser ausgewertet, mit Ergebnis zum Mitnehmen. Eine Orientierung, keine Diagnose.',
-    schema: [bcSchema(bc)],
+    schema: [bcSchema(bc), { '@type': 'WebApplication', name: 'Borderline-Selbsttest (Orientierung, keine Diagnose)', url: B + '/test/', applicationCategory: 'HealthApplication', operatingSystem: 'Web', inLanguage: 'de-DE', isAccessibleForFree: true, offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' }, publisher: { '@id': B + '/#org' } }],
     body: `<section class="ph"><div class="wrap">${crumbs(bc)}<h1>Borderline-Selbsttest</h1><p class="lede">Eine ausführliche erste Orientierung entlang der neun Kriterien. Keine Diagnose, kein validierter Fragebogen.</p></div></section>
 <section class="sec"><div class="wrap">${kbox}<div class="tst">
 <div class="box box--warn"><b>Bitte vorab lesen.</b> Dieser Test kann keine Diagnose stellen. Die Diagnose einer Borderline-Persönlichkeitsstörung erfordert nach der S3-Leitlinie eine sorgfältige klinische Diagnostik durch Fachleute, unterstützt durch ein validiertes, halbstrukturiertes Interview. Unsere Fragen sind selbst formuliert, orientieren sich an den neun Kriterien des DSM-5 und sind nicht wissenschaftlich validiert. Sie zeigen höchstens, ob ein fachliches Gespräch sinnvoll sein kann.</div>
@@ -270,10 +282,21 @@ layout({ p: '/datenschutz/', title: 'Datenschutz | Borderline für alle', desc: 
 
 /* ---------- Technik ---------- */
 wr('search-index.json', JSON.stringify(A.map((a) => ({ t: a.title, d: a.desc, c: catBy[a.cat].name, u: `/artikel/${a.slug}/`, k: a.sections.map((s) => s[1]).join(' ') + ' ' + a.faq.map((f) => f[0]).join(' ') }))));
-const urls = ['/', '/test/', ...CATS.filter((c) => artsOf(c.slug).length).map((c) => `/thema/${c.slug}/`), ...A.map((a) => `/artikel/${a.slug}/`), '/krise/', '/glossar/', '/redaktion/', '/netzwerk/', '/kontakt/', '/impressum/', '/datenschutz/'];
-wr('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${B}${u}</loc><lastmod>${DATE}</lastmod><priority>${u === '/' ? '1.0' : u.startsWith('/artikel/') ? '0.9' : '0.6'}</priority></url>`).join('\n')}\n</urlset>\n`);
-wr('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${B}/sitemap.xml\n`);
-wr('llms.txt', `# ${BRAND}\n\n> Quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung (emotional instabile Persönlichkeitsstörung) für Betroffene, Angehörige und Fachinteressierte: erkennen, Diagnose, Ursachen, Behandlung, Alltag und Krisen, Beziehungen, Arbeit und Recht, Hilfe finden. Keine Diagnosen, keine Heilversprechen. Herausgeber: BA Entertainment, Alleestraße 15, 42781 Haan. Kontakt: info@cogether.de. Stand: 09.11.2026.\n\n## Artikel\n\n${A.map((a) => `- [${a.title}](${B}/artikel/${a.slug}/): ${a.desc}`).join('\n')}\n\n## Weitere Seiten\n\n- [Borderline-Selbsttest (keine Diagnose)](${B}/test/)\n- [Hilfe in der Krise](${B}/krise/)\n- [Glossar](${B}/glossar/)\n- [Redaktion und Quellen](${B}/redaktion/)\n- [Weiterführende Seiten](${B}/netzwerk/)\n\n## Verbundene Seiten (CoGether-Welt)\n\n- [CoGether, Coaching und Mentoring](https://cogether.de/)\n- [CoGether Software für Coaches](https://cogether-software.de/)\n- [CoGether für Organisationen](https://business.cogether.de/)\n- [ADHS Begleitung, Wissensportal von Angie](https://adhsbegleitung.de/)\n- [Guidance Observatory, Fachportal](https://guidanceobservatory.com/)\n- [Podcast Border Allein, Svens Podcast](https://borderallein.de/podcast/)\n- [Podcast Gedankenkotze, Angies Podcast](https://gedankenkotze.de/)\n`);
+const FIXED = [['/', DATE, '1.0', 'weekly'], ['/test/', DATE, '0.8', 'monthly'], ['/krise/', DATE, '0.7', 'monthly'], ['/glossar/', DATE, '0.5', 'monthly'], ['/redaktion/', DATE, '0.4', 'yearly'], ['/netzwerk/', DATE, '0.4', 'yearly'], ['/kontakt/', DATE, '0.3', 'yearly'], ['/impressum/', DATE, '0.1', 'yearly'], ['/datenschutz/', DATE, '0.1', 'yearly']];
+const newest = (list) => list.map((a) => a.updated || PUB(a)).sort().pop() || DATE;
+const urlRows = [...FIXED, ...CATS.filter((c) => artsOf(c.slug).length).map((c) => ['/thema/' + c.slug + '/', newest(artsOf(c.slug)), '0.7', 'weekly']), ...A.map((a) => ['/artikel/' + a.slug + '/', a.updated || PUB(a), '0.9', 'monthly'])];
+const urls = urlRows.map((r) => r[0]);
+wr('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urlRows.map(([u, m, pr, cf]) => '  <url><loc>' + B + u + '</loc><lastmod>' + m + '</lastmod><changefreq>' + cf + '</changefreq><priority>' + pr + '</priority></url>').join('\n') + '\n</urlset>\n');
+const AIBOTS = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'DuckAssistBot', 'MistralAI-User', 'cohere-ai'];
+wr('robots.txt', 'User-agent: *\nAllow: /\n\n' + AIBOTS.map((b) => 'User-agent: ' + b + '\nAllow: /\n').join('\n') + '\nSitemap: ' + B + '/sitemap.xml\n');
+const xesc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+wr('feed.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>' + BRAND + '</title><link>' + B + '/</link><description>Quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung</description><language>de-DE</language><atom:link href="' + B + '/feed.xml" rel="self" type="application/rss+xml"/>' + A.slice().reverse().slice(0, 30).map((a) => '<item><title>' + xesc(a.title) + '</title><link>' + B + '/artikel/' + a.slug + '/</link><guid isPermaLink="true">' + B + '/artikel/' + a.slug + '/</guid><pubDate>' + new Date(PUB(a) + 'T07:00:00Z').toUTCString() + '</pubDate><category>' + xesc(catBy[a.cat].name) + '</category><description>' + xesc(a.desc) + '</description></item>').join('') + '</channel></rss>\n');
+wr('llms-full.txt', '# ' + BRAND + ' (Volltext)\n\n> Alle Artikel im Volltext für Suchmaschinen und KI-Systeme. Quellenbasiert, keine Diagnosen, keine Heilversprechen. Herausgeber: BA Entertainment, Haan. Krise: Telefonseelsorge 116 123 (kostenfrei), Notruf 112, ärztlicher Bereitschaftsdienst 116 117.\n\n' + A.map((a) => '## ' + a.title + '\n\nURL: ' + B + '/artikel/' + a.slug + '/\nKategorie: ' + catBy[a.cat].name + '\nVeröffentlicht: ' + PUB(a) + '\n\nKurz gesagt: ' + a.short + '\n\n' + a.sections.map(([id, h, html]) => '### ' + h + '\n' + plain(html)).join('\n\n') + '\n\n### Häufige Fragen\n' + a.faq.map(([q, an]) => 'F: ' + q + '\nA: ' + an).join('\n') + '\n\n### Quellen\n' + a.sources.map((x) => '- ' + x.t + ': ' + x.u).join('\n')).join('\n\n---\n\n') + '\n');
+const INDEXNOW = '3f6a9d1c8b2e4f7a9c0d5e1b7a2c4d68';
+wr(INDEXNOW + '.txt', INDEXNOW);
+wr('indexnow-urls.json', JSON.stringify({ host: 'xn--borderlinefralle-tzb.de', key: INDEXNOW, keyLocation: B + '/' + INDEXNOW + '.txt', urlList: urls.map((u) => B + u) }));
+wr('search-index.json', JSON.stringify(A.map((a) => ({ t: a.title, d: a.desc, c: catBy[a.cat].name, u: '/artikel/' + a.slug + '/', k: a.sections.map((x) => x[1]).join(' ') + ' ' + a.faq.map((f) => f[0]).join(' ') }))));
+wr('llms.txt', `# ${BRAND}\n\n> Quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung (emotional instabile Persönlichkeitsstörung) für Betroffene, Angehörige und Fachinteressierte: erkennen, Diagnose, Ursachen, Behandlung, Alltag und Krisen, Beziehungen, Arbeit und Recht, Hilfe finden. Keine Diagnosen, keine Heilversprechen. Herausgeber: BA Entertainment, Alleestraße 15, 42781 Haan. Kontakt: info@cogether.de. Stand: 09.11.2026.\n\n## Artikel\n\n${A.map((a) => `- [${a.title}](${B}/artikel/${a.slug}/): ${a.desc}`).join('\n')}\n\n## Weitere Seiten\n\n- [Borderline-Selbsttest (keine Diagnose)](${B}/test/)\n- [Volltext aller Artikel für KI-Systeme](${B}/llms-full.txt)\n- [RSS-Feed](${B}/feed.xml)\n- [Hilfe in der Krise](${B}/krise/)\n- [Glossar](${B}/glossar/)\n- [Redaktion und Quellen](${B}/redaktion/)\n- [Weiterführende Seiten](${B}/netzwerk/)\n\n## Verbundene Seiten (CoGether-Welt)\n\n- [CoGether, Coaching und Mentoring](https://cogether.de/)\n- [CoGether Software für Coaches](https://cogether-software.de/)\n- [CoGether für Organisationen](https://business.cogether.de/)\n- [ADHS Begleitung, Wissensportal von Angie](https://adhsbegleitung.de/)\n- [Guidance Observatory, Fachportal](https://guidanceobservatory.com/)\n- [Podcast Border Allein, Svens Podcast](https://borderallein.de/podcast/)\n- [Podcast Gedankenkotze, Angies Podcast](https://gedankenkotze.de/)\n`);
 wr('favicon.svg', fs.readFileSync(root + 'assets/logo.svg', 'utf8'));
 wr('CNAME', 'xn--borderlinefralle-tzb.de\n');
 wr('404.html', `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Seite nicht gefunden | ${BRAND}</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css"></head><body><div class="crisis"><div class="wrap"><span class="crisis__l">Hilfe in der Krise</span><span>Telefonseelsorge <b>116 123</b> (kostenfrei)</span><span>Notruf <b>112</b></span><span>Ärztlicher Bereitschaftsdienst <b>116 117</b></span></div></div><main class="wrap" style="padding:5rem 0"><span class="eyebrow">404</span><h1>Diese Seite gibt es nicht.</h1><p class="lede" style="margin:1rem 0 2rem">Vielleicht hilft die Suche auf der Startseite.</p><a class="btn" href="/">Zur Startseite</a></main></body></html>`);

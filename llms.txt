@@ -22,10 +22,14 @@
 - [Zurück in den Job: BEM und stufenweise Wiedereingliederung](https://xn--borderlinefralle-tzb.de/artikel/wiedereingliederung-arbeit-borderline/): Nach längerer Krankheit zurück in den Beruf: Betriebliches Eingliederungsmanagement (BEM) und stufenweise Wiedereingliederung erklärt, mit Voraussetzungen und Zahlung. Gilt auch bei psychischen Erkrankungen.
 - [Therapieplatz finden: Sprechstunde, 116117 und Antrag](https://xn--borderlinefralle-tzb.de/artikel/therapieplatz-finden/): So findest Du einen Therapieplatz: psychotherapeutische Sprechstunde, Terminservicestelle 116117, Akutbehandlung, Probesitzungen und Antrag bei der Krankenkasse. Mit Fristen der KBV.
 - [Selbsthilfe und Beratung bei Borderline: Anlaufstellen im Überblick](https://xn--borderlinefralle-tzb.de/artikel/selbsthilfe-beratung-angehoerige/): Wo Betroffene und Angehörige Austausch und Beratung finden: SeeleFon, Peer4u und SelbsthilfeNetz des BApK, Borderline-Plattform und Borderline-Netzwerk, bke-Beratungsstellen.
+- [Erwerbsminderungsrente bei Borderline: Voraussetzungen und Antrag](https://xn--borderlinefralle-tzb.de/artikel/erwerbsminderungsrente-borderline/): Erwerbsminderungsrente bei Borderline-Persönlichkeitsstörung: Wann sie möglich ist, welche Stundengrenzen und Wartezeiten gelten, warum Reha vor Rente kommt und was du hinzuverdienen darfst.
+- [Wartezeit auf den Therapieplatz überbrücken: Was bei Borderline helfen kann](https://xn--borderlinefralle-tzb.de/artikel/wartezeit-therapieplatz-ueberbruecken/): Durchschnittlich 142 Tage bis zur Psychotherapie: Was du in der Wartezeit tun kannst, welche Hilfen es gibt (Terminservice 116117, Akutbehandlung, Selbsthilfe, Beratung) und wann es dringend ist.
 
 ## Weitere Seiten
 
 - [Borderline-Selbsttest (keine Diagnose)](https://xn--borderlinefralle-tzb.de/test/)
+- [Volltext aller Artikel für KI-Systeme](https://xn--borderlinefralle-tzb.de/llms-full.txt)
+- [RSS-Feed](https://xn--borderlinefralle-tzb.de/feed.xml)
 - [Hilfe in der Krise](https://xn--borderlinefralle-tzb.de/krise/)
 - [Glossar](https://xn--borderlinefralle-tzb.de/glossar/)
 - [Redaktion und Quellen](https://xn--borderlinefralle-tzb.de/redaktion/)
