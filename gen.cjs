@@ -16,7 +16,7 @@ const catBy = Object.fromEntries(CATS.map((c) => [c.slug, c]));
 const artsOf = (slug) => A.filter((a) => a.cat === slug);
 const artBy = Object.fromEntries(A.map((a) => [a.slug, a]));
 const SEARCH_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
-const NAV = [['/thema/erkennen/', 'Erkennen'], ['/thema/diagnose/', 'Diagnose'], ['/thema/behandlung/', 'Behandlung'], ['/thema/beziehungen/', 'Angehörige'], ['/thema/hilfe/', 'Hilfe finden'], ['/glossar/', 'Glossar']];
+const NAV = [['/thema/erkennen/', 'Erkennen'], ['/thema/diagnose/', 'Diagnose'], ['/thema/behandlung/', 'Behandlung'], ['/thema/beziehungen/', 'Angehörige'], ['/thema/hilfe/', 'Hilfe finden'], ['/test/', 'Selbsttest']];
 
 function layout({ p, title, desc, schema = [], noindex = false, body }) {
   const url = B + p;
@@ -40,7 +40,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : '<meta name="robots" co
 <link rel="canonical" href="${url}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=1">
+<link rel="stylesheet" href="/assets/site.css?v=2"><link rel="stylesheet" href="/assets/test.css?v=1">
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>
 <script src="/assets/site.js?v=1" defer></script>
 </head>
@@ -64,7 +64,7 @@ ${body}
     <div><div class="logo" style="margin-bottom:1rem"><img src="/assets/logo.svg" width="48" height="48" alt="" loading="lazy"><span><b>${BRAND}</b></span></div><p style="max-width:34ch">Verständliche, quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung für Betroffene, Angehörige und Fachinteressierte.</p></div>
     <div><h4>Themen</h4>${CATS.slice(0, 4).map((c) => `<a href="/thema/${c.slug}/">${c.name}</a>`).join('')}</div>
     <div><h4>Mehr</h4>${CATS.slice(4).map((c) => `<a href="/thema/${c.slug}/">${c.name}</a>`).join('')}</div>
-    <div><h4>Portal</h4><a href="/krise/">Hilfe in der Krise</a><a href="/glossar/">Glossar</a><a href="/redaktion/">Redaktion und Quellen</a><a href="/netzwerk/">Weiterführende Seiten</a><a href="/kontakt/">Kontakt, Fehler melden</a><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div>
+    <div><h4>Portal</h4><a href="/test/">Borderline-Selbsttest</a><a href="/krise/">Hilfe in der Krise</a><a href="/glossar/">Glossar</a><a href="/redaktion/">Redaktion und Quellen</a><a href="/netzwerk/">Weiterführende Seiten</a><a href="/kontakt/">Kontakt, Fehler melden</a><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div>
     <div><h4>Die CoGether-Welt</h4><a href="https://cogether.de/" rel="noopener">CoGether, Coaching</a><a href="https://cogether.de/themen/borderline/" rel="noopener">Borderline bei CoGether</a><a href="https://borderallein.de/podcast/" rel="noopener">Podcast Border Allein</a><a href="https://gedankenkotze.de/" rel="noopener">Podcast Gedankenkotze</a><a href="https://cogether-software.de/" rel="noopener">Software für Coaches</a><a href="https://business.cogether.de/" rel="noopener">Für Organisationen</a><a href="https://adhsbegleitung.de/" rel="noopener">ADHS Begleitung</a><a href="https://guidanceobservatory.com/" rel="noopener">Guidance Observatory</a></div>
   </div>
   <p class="ft__sos"><b>Wichtig:</b> Die Inhalte dienen der Information und ersetzen keine Diagnose, keine ärztliche und keine psychotherapeutische Behandlung. In der Krise: Telefonseelsorge <b>116 123</b> (kostenfrei), ärztlicher Bereitschaftsdienst <b>116 117</b>, bei akuter Gefahr Notruf <b>112</b>.</p>
@@ -100,6 +100,7 @@ layout({
 <ul><li>Telefonseelsorge <b>116 123</b></li><li>Notruf <b>112</b></li><li>Ärztlicher Bereitschaftsdienst <b>116 117</b></li></ul><a class="btn" href="/krise/">Alle Hilfen in der Krise</a></aside>
 </div></section>
 
+<section class="sec"><div class="wrap"><div class="cta-test"><div><h3>Ausführlicher Borderline-Selbsttest</h3><p>40 Aussagen zu den neun Kriterien, anonym im Browser ausgewertet, mit Ergebnis zum Mitnehmen. Eine erste Orientierung, keine Diagnose.</p></div><a class="btn" href="/test/">Test starten</a></div></div></section>
 <section class="sec"><div class="wrap">
   <div class="sec__h"><div><h2>Themen</h2><p>Acht Bereiche, klar gegliedert. Wähle den, der zu Deiner Frage passt.</p></div></div>
   <div class="grid g4">${CATS.map((c) => { const n = artsOf(c.slug).length; return `<a class="cat" href="/thema/${c.slug}/"><span class="cat__i">${c.icon}</span><h3>${c.name}</h3><p>${c.desc}</p><small>${n} ${n === 1 ? 'Artikel' : 'Artikel'}</small></a>`; }).join('')}</div>
@@ -185,6 +186,23 @@ for (const a of A) {
   });
 }
 
+/* ---------- TEST ---------- */
+{
+  const bc = [['/', 'Start'], ['/test/', 'Borderline-Selbsttest']];
+  layout({ p: '/test/', title: 'Borderline-Selbsttest: ausführliche Orientierung, keine Diagnose | Borderline für alle',
+    desc: 'Ausführlicher Borderline-Selbsttest mit 40 Aussagen zu den neun Kriterien: anonym, im Browser ausgewertet, mit Ergebnis zum Mitnehmen. Eine Orientierung, keine Diagnose.',
+    schema: [bcSchema(bc)],
+    body: `<section class="ph"><div class="wrap">${crumbs(bc)}<h1>Borderline-Selbsttest</h1><p class="lede">Eine ausführliche erste Orientierung entlang der neun Kriterien. Keine Diagnose, kein validierter Fragebogen.</p></div></section>
+<section class="sec"><div class="wrap">${kbox}<div class="tst">
+<div class="box box--warn"><b>Bitte vorab lesen.</b> Dieser Test kann keine Diagnose stellen. Die Diagnose einer Borderline-Persönlichkeitsstörung erfordert nach der S3-Leitlinie eine sorgfältige klinische Diagnostik durch Fachleute, unterstützt durch ein validiertes, halbstrukturiertes Interview. Unsere Fragen sind selbst formuliert, orientieren sich an den neun Kriterien des DSM-5 und sind nicht wissenschaftlich validiert. Sie zeigen höchstens, ob ein fachliches Gespräch sinnvoll sein kann.</div>
+<div class="prose"><h2 style="margin-top:0">So funktioniert der Test</h2><ul><li><b>Dauer:</b> etwa 10 bis 15 Minuten, 10 Schritte.</li><li><b>Wie antworten:</b> Denk an Deine Erfahrungen über längere Zeit und in verschiedenen Lebensbereichen, nicht an einen einzelnen schlechten Tag.</li><li><b>Datenschutz:</b> Die Auswertung läuft nur in Deinem Browser. Antworten werden nicht gesendet und nicht gespeichert.</li><li><b>Ergebnis:</b> Du siehst Deine Ausprägung in allen neun Bereichen und kannst sie ausdrucken oder als PDF speichern.</li></ul></div>
+<div id="test-start" style="scroll-margin-top:100px"></div>
+<div id="tst" aria-live="polite"><noscript>Für den Test wird JavaScript benötigt.</noscript></div>
+<div class="prose"><h2>Hintergrund und Grenzen</h2><p>Die neun Bereiche entsprechen den Kriterien, die die S3-Leitlinie der AWMF aus dem DSM-5 aufführt (<a href="/artikel/borderline-symptome/">Borderline-Symptome: Die neun Kriterien</a>). Nach MSD Manual müssen mindestens fünf davon zutreffen. Die Leitlinie nennt außerdem, dass validierte Screeningverfahren eingesetzt werden können, die Diagnose aber durch eine sorgfältige klinische Diagnostik gestellt werden soll. Mehr dazu: <a href="/artikel/borderline-diagnose-ablauf/">Borderline-Diagnose: So läuft die Diagnostik ab</a>.</p><p>Ähnliche Beschwerden kommen auch bei anderen Erkrankungen vor, etwa Depression, posttraumatischer Belastungsstörung, ADHS oder bipolaren Störungen. Ein auffälliges Ergebnis heißt deshalb nicht „Borderline“, und ein unauffälliges schließt nichts aus.</p><p class="disc">Quellen: AWMF, S3-Leitlinie Borderline-Persönlichkeitsstörung (Reg.-Nr. 038-015, Version 2.0 vom 14.11.2022, Gültigkeit abgelaufen, in Überarbeitung); MSD Manual, Ausgabe für Patienten. Bei akuter Krise: Telefonseelsorge 116 123 (kostenfrei), Notruf 112, ärztlicher Bereitschaftsdienst 116 117.</p></div>
+</div></div></section>
+<script src="/assets/test.js?v=1"></script>` });
+}
+
 /* ---------- KRISE ---------- */
 {
   const bc = [['/', 'Start'], ['/krise/', 'Hilfe in der Krise']];
@@ -252,10 +270,10 @@ layout({ p: '/datenschutz/', title: 'Datenschutz | Borderline für alle', desc: 
 
 /* ---------- Technik ---------- */
 wr('search-index.json', JSON.stringify(A.map((a) => ({ t: a.title, d: a.desc, c: catBy[a.cat].name, u: `/artikel/${a.slug}/`, k: a.sections.map((s) => s[1]).join(' ') + ' ' + a.faq.map((f) => f[0]).join(' ') }))));
-const urls = ['/', ...CATS.filter((c) => artsOf(c.slug).length).map((c) => `/thema/${c.slug}/`), ...A.map((a) => `/artikel/${a.slug}/`), '/krise/', '/glossar/', '/redaktion/', '/netzwerk/', '/kontakt/', '/impressum/', '/datenschutz/'];
+const urls = ['/', '/test/', ...CATS.filter((c) => artsOf(c.slug).length).map((c) => `/thema/${c.slug}/`), ...A.map((a) => `/artikel/${a.slug}/`), '/krise/', '/glossar/', '/redaktion/', '/netzwerk/', '/kontakt/', '/impressum/', '/datenschutz/'];
 wr('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${B}${u}</loc><lastmod>${DATE}</lastmod><priority>${u === '/' ? '1.0' : u.startsWith('/artikel/') ? '0.9' : '0.6'}</priority></url>`).join('\n')}\n</urlset>\n`);
 wr('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${B}/sitemap.xml\n`);
-wr('llms.txt', `# ${BRAND}\n\n> Quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung (emotional instabile Persönlichkeitsstörung) für Betroffene, Angehörige und Fachinteressierte: erkennen, Diagnose, Ursachen, Behandlung, Alltag und Krisen, Beziehungen, Arbeit und Recht, Hilfe finden. Keine Diagnosen, keine Heilversprechen. Herausgeber: BA Entertainment, Alleestraße 15, 42781 Haan. Kontakt: info@cogether.de. Stand: 09.11.2026.\n\n## Artikel\n\n${A.map((a) => `- [${a.title}](${B}/artikel/${a.slug}/): ${a.desc}`).join('\n')}\n\n## Weitere Seiten\n\n- [Hilfe in der Krise](${B}/krise/)\n- [Glossar](${B}/glossar/)\n- [Redaktion und Quellen](${B}/redaktion/)\n- [Weiterführende Seiten](${B}/netzwerk/)\n\n## Verbundene Seiten (CoGether-Welt)\n\n- [CoGether, Coaching und Mentoring](https://cogether.de/)\n- [CoGether Software für Coaches](https://cogether-software.de/)\n- [CoGether für Organisationen](https://business.cogether.de/)\n- [ADHS Begleitung, Wissensportal von Angie](https://adhsbegleitung.de/)\n- [Guidance Observatory, Fachportal](https://guidanceobservatory.com/)\n- [Podcast Border Allein, Svens Podcast](https://borderallein.de/podcast/)\n- [Podcast Gedankenkotze, Angies Podcast](https://gedankenkotze.de/)\n`);
+wr('llms.txt', `# ${BRAND}\n\n> Quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung (emotional instabile Persönlichkeitsstörung) für Betroffene, Angehörige und Fachinteressierte: erkennen, Diagnose, Ursachen, Behandlung, Alltag und Krisen, Beziehungen, Arbeit und Recht, Hilfe finden. Keine Diagnosen, keine Heilversprechen. Herausgeber: BA Entertainment, Alleestraße 15, 42781 Haan. Kontakt: info@cogether.de. Stand: 09.11.2026.\n\n## Artikel\n\n${A.map((a) => `- [${a.title}](${B}/artikel/${a.slug}/): ${a.desc}`).join('\n')}\n\n## Weitere Seiten\n\n- [Borderline-Selbsttest (keine Diagnose)](${B}/test/)\n- [Hilfe in der Krise](${B}/krise/)\n- [Glossar](${B}/glossar/)\n- [Redaktion und Quellen](${B}/redaktion/)\n- [Weiterführende Seiten](${B}/netzwerk/)\n\n## Verbundene Seiten (CoGether-Welt)\n\n- [CoGether, Coaching und Mentoring](https://cogether.de/)\n- [CoGether Software für Coaches](https://cogether-software.de/)\n- [CoGether für Organisationen](https://business.cogether.de/)\n- [ADHS Begleitung, Wissensportal von Angie](https://adhsbegleitung.de/)\n- [Guidance Observatory, Fachportal](https://guidanceobservatory.com/)\n- [Podcast Border Allein, Svens Podcast](https://borderallein.de/podcast/)\n- [Podcast Gedankenkotze, Angies Podcast](https://gedankenkotze.de/)\n`);
 wr('favicon.svg', fs.readFileSync(root + 'assets/logo.svg', 'utf8'));
 wr('CNAME', 'xn--borderlinefralle-tzb.de\n');
 wr('404.html', `<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Seite nicht gefunden | ${BRAND}</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css"></head><body><div class="crisis"><div class="wrap"><span class="crisis__l">Hilfe in der Krise</span><span>Telefonseelsorge <b>116 123</b> (kostenfrei)</span><span>Notruf <b>112</b></span><span>Ärztlicher Bereitschaftsdienst <b>116 117</b></span></div></div><main class="wrap" style="padding:5rem 0"><span class="eyebrow">404</span><h1>Diese Seite gibt es nicht.</h1><p class="lede" style="margin:1rem 0 2rem">Vielleicht hilft die Suche auf der Startseite.</p><a class="btn" href="/">Zur Startseite</a></main></body></html>`);
