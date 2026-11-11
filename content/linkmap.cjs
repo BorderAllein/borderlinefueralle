@@ -15,6 +15,10 @@ const L = {
   sfemo: ['https://selbstfokus.de/artikel/emotionsregulation-strategien/', 'Emotionsregulation: Strategien', 'Selbstfokus, Lesemagazin (allgemein, nicht borderline-spezifisch)'],
   sfbind: ['https://selbstfokus.de/artikel/bindungsstile-erwachsene-forschung/', 'Bindungsstile bei Erwachsenen: Was die Forschung sagt', 'Selbstfokus, Lesemagazin (allgemein, nicht borderline-spezifisch)'],
   sfimp: ['https://selbstfokus.de/artikel/impulskontrolle-verbessern/', 'Impulskontrolle verbessern', 'Selbstfokus, Lesemagazin (allgemein, kein Ersatz für Behandlung)'],
+  thema: ['https://cogether.de/themen/borderline/', 'Borderline und emotionale Intensität: Themenseite bei CoGether', 'CoGether'],
+  zrueck: ['https://zieleumsetzen.de/artikel/verpasster-tag-neustart-rueckschlag/', 'Verpasster Tag: Neustart nach dem Rückschlag', 'Ziele umsetzen, Magazin (allgemein, nicht borderline-spezifisch)'],
+  zroutine: ['https://zieleumsetzen.de/artikel/routinen-entwerfen-anker-mindestversion/', 'Routinen entwerfen: Anker und Mindestversion', 'Ziele umsetzen, Magazin (allgemein, nicht borderline-spezifisch)'],
+  zverbind: ['https://zieleumsetzen.de/artikel/verbindlichkeit-rechenschaft-fortschritt-teilen/', 'Verbindlichkeit: Rechenschaft und Fortschritt teilen', 'Ziele umsetzen, Magazin (allgemein, nicht borderline-spezifisch)'],
   podcast: ['https://borderallein.de/podcast/', 'Podcast Border Allein', 'Svens Podcast zum Thema Borderline'],
   adhs: ['https://adhsbegleitung.de/artikel/adhs-bei-erwachsenen/', 'ADHS bei Erwachsenen: Symptome, Ursachen, Diagnose und Hilfe', 'ADHS Begleitung (anderes Krankheitsbild)'],
 };
@@ -32,7 +36,7 @@ const MAP = {
   'borderline-medikamente': ['verstehen'],
   'borderline-und-sucht': ['verstehen', 'sfimp'],
   'krisenplan-borderline': ['intensitaet', 'podcast'],
-  'borderline-alltag-fertigkeiten': ['intensitaet', 'emoreg', 'sfemo', 'podcast'],
+  'borderline-alltag-fertigkeiten': ['intensitaet', 'emoreg', 'sfemo', 'zrueck'],
   'borderline-angehoerige': ['familie', 'grenzen', 'podcast'],
   'borderline-beziehungen': ['beziehungen', 'verlustangst', 'sfbind', 'podcast'],
   'schweigepflicht-angehoerige-borderline': ['familie', 'grenzen'],
@@ -41,7 +45,17 @@ const MAP = {
   'erwerbsminderungsrente-borderline': ['verstehen'],
   'reha-borderline-antrag': ['verstehen', 'luecke'],
   'therapieplatz-finden': ['luecke', 'stigma', 'verstehen'],
-  'wartezeit-therapieplatz-ueberbruecken': ['luecke', 'intensitaet'],
-  'selbsthilfe-beratung-angehoerige': ['familie', 'stigma', 'podcast'],
+  'wartezeit-therapieplatz-ueberbruecken': ['luecke', 'intensitaet', 'zroutine'],
+  'selbsthilfe-beratung-angehoerige': ['familie', 'stigma', 'zverbind', 'podcast'],
 };
-module.exports = { L, MAP, netLinks: (slug) => (MAP[slug] || ['verstehen']).map((k) => L[k]).slice(0, 4) };
+// Fallback: Artikel ohne Eintrag bekommen automatisch 2 bis 3 Standardlinks je Kategorie. Jeder Artikel erhält mindestens einen cogether.de-Link.
+const CATDEF = { erkennen: 'verstehen', diagnose: 'test', ursachen: 'verstehen', behandlung: 'verstehen', alltag: 'intensitaet', beziehungen: 'beziehungen', 'arbeit-recht': 'thema', hilfe: 'verstehen' };
+const CATOBS = { hilfe: 'luecke', 'arbeit-recht': 'stigma' };
+function netLinks(slug, cat) {
+  let keys = MAP[slug];
+  if (!keys) keys = [CATDEF[cat] || 'thema', CATOBS[cat] || 'stigma', 'podcast'];
+  let out = keys.map((k) => L[k]).filter(Boolean);
+  if (!out.some((x) => x[0].startsWith('https://cogether.de/'))) out.unshift(L[CATDEF[cat] || 'thema']);
+  return out.slice(0, 4);
+}
+module.exports = { L, MAP, netLinks };
