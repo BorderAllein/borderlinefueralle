@@ -54,7 +54,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : '<meta name="robots" co
 <link rel="canonical" href="${url}"><link rel="alternate" hreflang="de" href="${url}"><link rel="alternate" type="application/rss+xml" title="${BRAND}" href="${B}/feed.xml">
 <link rel="preload" href="/assets/fonts/manrope-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/sourcesans3-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css?v=1">
-<link rel="stylesheet" href="/assets/site.css?v=5"><link rel="stylesheet" href="/assets/test.css?v=1">
+<link rel="stylesheet" href="/assets/site.css?v=6"><link rel="stylesheet" href="/assets/test.css?v=1">
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>
 <script src="/assets/site.js?v=1" defer></script>
 </head>
@@ -82,6 +82,7 @@ ${NL_OFF.includes(p) ? '' : NEWSLETTER}
     <div><h4>Portal</h4><a href="/test/">Borderline-Selbsttest</a><a href="/team/">Team</a><a href="/krise/">Hilfe in der Krise</a><a href="/glossar/">Glossar</a><a href="/redaktion/">Redaktion und Quellen</a><a href="/netzwerk/">Weiterführende Seiten</a><a href="/kontakt/">Kontakt, Fehler melden</a><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div>
     <div><h4>Die CoGether-Welt</h4><a href="https://cogether.de/" rel="noopener">CoGether, Coaching</a><a href="https://cogether.de/themen/borderline/" rel="noopener">Borderline bei CoGether</a><a href="https://borderallein.de/podcast/" rel="noopener">Podcast Border Allein</a><a href="https://gedankenkotze.de/" rel="noopener">Podcast Gedankenkotze</a><a href="https://cogether-software.de/" rel="noopener">Software für Coaches</a><a href="https://business.cogether.de/" rel="noopener">Für Organisationen</a><a href="https://adhsbegleitung.de/" rel="noopener">ADHS Begleitung</a><a href="https://guidanceobservatory.com/" rel="noopener">Guidance Observatory</a></div>
   </div>
+  <p class="ft__soc"><b>Folge uns:</b> <a href="https://www.instagram.com/cogether_official" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@borderallein_official" target="_blank" rel="noopener">TikTok</a> · <a href="https://www.youtube.com/@cogether" target="_blank" rel="noopener">YouTube</a> · <a href="https://de.linkedin.com/in/cogether" target="_blank" rel="noopener">LinkedIn</a></p>
   <p class="ft__sos"><b>Wichtig:</b> Die Inhalte dienen der Information und ersetzen keine Diagnose, keine ärztliche und keine psychotherapeutische Behandlung. In der Krise: Telefonseelsorge <b>116 123</b> (kostenfrei), ärztlicher Bereitschaftsdienst <b>116 117</b>, bei akuter Gefahr Notruf <b>112</b>.</p>
   <div class="ft__b"><span>© <span id="y"></span> BA Entertainment · ${BRAND}</span><span>Stand: 09.11.2026</span></div>
 </div></footer>
