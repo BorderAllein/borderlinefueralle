@@ -93,3 +93,7 @@ p{margin:0 0 1.1em}
  .burger{display:flex}.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--navy);flex-direction:column;align-items:stretch;padding:.6rem 24px 1.2rem;border-top:1px solid rgba(255,255,255,.14)}.nav.open{display:flex}.nav a{border-bottom:1px solid rgba(255,255,255,.1);border-radius:0;padding:.85rem .2rem}.nav .cta{margin:.8rem 0 0;text-align:center;border-radius:var(--r)}.srch-b{display:none}.crisis a{margin-left:0}}
 @media(max-width:640px){body{font-size:17px}.g4,.g3,.g2,.gloss,.net{grid-template-columns:1fr}.wrap,.wrap--n{width:calc(100% - 32px)}.sec{padding:3rem 0}.band{padding:1.6rem}.ft__g{grid-template-columns:1fr}.hero{padding:3rem 0}.crisis{font-size:.82rem}}
 @media print{.hd,.crisis,.toc,.side-cta,.ft,.band{display:none}}
+
+/* Newsletter und Netzwerk-Links */
+.nl{background:var(--soft);border-top:1px solid var(--line);padding:2rem 0}.nl__k{font:800 .75rem var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--teal-d);margin:0 0 .3rem}.nl__t{color:var(--mute);font-size:.95rem;margin:0 0 .6rem}
+.netw ul{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.6rem}.netw li{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--r);padding:.8rem 1rem;background:#fff}.netw a{font:700 1rem var(--head);text-decoration:none}.netw small{display:block;color:var(--mute);font-size:.82rem}

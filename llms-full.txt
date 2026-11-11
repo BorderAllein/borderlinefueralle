@@ -843,3 +843,57 @@ A: Notruf 112 oder nächste Notaufnahme. Telefonseelsorge 116 123 ist kostenfrei
 - BApK: SeeleFon, Telefon- und Mailberatung: https://www.bapk.de/angebote/seelefon.html
 - BApK (Bundesverband der Angehörigen psychisch erkrankter Menschen): Borderline: https://www.bapk.de/themen/borderline.html
 - AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+
+---
+
+## Reha bei Borderline: Wann sie infrage kommt und wie der Antrag läuft
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/reha-borderline-antrag/
+Kategorie: Hilfe finden
+Veröffentlicht: 2026-11-11
+
+Kurz gesagt: Eine Reha kommt laut TK grundsätzlich für nahezu alle psychischen Erkrankungen infrage, wenn der Zustand ausreichend stabil ist und die Maßnahme erfolgversprechend erscheint. Kostenträger ist die Renten- oder Krankenversicherung. Die Fachärztin oder der Facharzt hilft beim Antrag, die Prüfung dauert mehrere Wochen.
+
+### Reha ist keine Krisenbehandlung
+Die Leitlinie unterscheidet: Stationäre und teilstationäre Behandlungen dienen kurzzeitigen Kriseninterventionen oder zeitlich definierten störungsspezifischen Programmen. Eine Rehabilitation hat ein anderes Ziel: Sie soll helfen, nach der Akutbehandlung in Alltag und Beruf zurückzufinden. Die TK nennt als Voraussetzung, dass der Zustand ausreichend stabil ist, also keine akuten Symptome und keine Verletzungs- oder Suizidgefahr vorliegen.
+
+### Wann kommt eine Reha infrage?
+Es besteht ein Bedarf, vorrangig bei Krankheitsbildern, die Alltagsroutine und Berufsausübung erschweren.
+ Die Maßnahme wird als erfolgversprechend gewertet.
+ Die Motivation zum Wiedereinstieg ist da oder kann geweckt werden.
+ Der Zustand ist ausreichend stabil.
+ Zu den Zielen der DRV gehört der Grundsatz „Reha vor Rente“: Vor einer Erwerbsminderungsrente wird geprüft, ob eine Rehabilitation die Erwerbsfähigkeit verbessern kann ( Erwerbsminderungsrente bei Borderline ).
+
+### Ablauf, Dauer und Inhalte
+Nach der TK kann eine Reha ganztägig ambulant oder stationär stattfinden. Sie beginnt mit einem Untersuchungsgespräch, danach erstellt die zuständige Fachärztin oder der Facharzt einen individuellen Behandlungsplan. Die Dauer ist individuell und reicht von vier Wochen bis zu mehreren Monaten, mit fünf bis sechs Therapietagen pro Woche zu je vier bis sechs Stunden. Mögliche Inhalte:
+ Einzel- und Gruppenpsychotherapie, gegebenenfalls medikamentöse Behandlung
+ Krankheitsbewältigung
+ Arbeits- und Ergotherapie mit Belastungserprobung
+ Kunst- oder Musiktherapie, Entspannungstraining
+ Sport- und Bewegungstherapie
+ sozialrechtliche Beratung
+
+### Antrag und Kostenträger
+Kostenträger ist die Renten- oder die Krankenversicherung. In der Regel empfiehlt die behandelnde Fachärztin oder der Facharzt die Reha, informiert über das Vorgehen und unterstützt beim Antrag. Die formale Abwicklung läuft über den örtlichen Sozialdienst oder die Kranken- beziehungsweise Rentenversicherung. Nach der Einreichung dauert die Prüfung mehrere Wochen.
+ Sprich Deine Ärztin oder Therapeutin auf Reha an.
+ Lass Dir bei Antrag und Befundbericht helfen, auch der Sozialdienst kann unterstützen.
+ Reiche den Antrag bei Renten- oder Krankenversicherung ein.
+
+### Worauf Du bei Borderline achten kannst
+Die Leitlinie empfiehlt eine strukturierte, borderline-spezifische Psychotherapie bei in der Methode fortgebildeten Fachleuten. Es kann sinnvoll sein, bei der Klinik oder Reha-Einrichtung nachzufragen, welche Erfahrung sie mit Persönlichkeitsstörungen hat und ob ein störungsspezifisches Konzept besteht. Das ist unsere Anregung und keine Empfehlung der Quellen. Gespräch dazu mit Deiner Ärztin oder Deinem Therapeuten.
+ Keine Rechts- oder Medizinberatung. Ob eine Reha infrage kommt, entscheiden Ärztinnen, Ärzte und der Kostenträger im Einzelfall.
+
+### Häufige Fragen
+F: Wer bezahlt die Reha?
+A: Die Renten- oder die Krankenversicherung, je nach Fall.
+F: Wie lange dauert eine psychosomatische Reha?
+A: Individuell: von vier Wochen bis zu mehreren Monaten, nach TK mit fünf bis sechs Therapietagen pro Woche.
+F: Kann ich eine Reha in akuter Krise machen?
+A: Nein. Voraussetzung ist laut TK ein ausreichend stabiler Zustand ohne akute Symptome und ohne Verletzungs- oder Suizidgefahr. In der Krise sind Kriseninterventionen und akute Hilfe vorgesehen.
+F: Wer stellt den Antrag?
+A: In der Regel unterstützt die behandelnde Fachärztin oder der Facharzt, die formale Abwicklung läuft über Sozialdienst oder die Versicherung.
+
+### Quellen
+- Techniker Krankenkasse: Reha bei psychischer Erkrankung (Stand 13.03.2024): https://www.tk.de/techniker/krankheit-und-behandlungen/erkrankungen/behandlungen-und-medizin/psychische-gesundheit/therapie-bei-psychischen-erkrankungen/reha-bei-psychischer-erkrankung-2165022
+- Deutsche Rentenversicherung: Erwerbsminderungsrenten (Stand 2026): https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
