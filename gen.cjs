@@ -7,7 +7,8 @@ const { A2, GLOSS } = require('./content/articles2.cjs');
 const today = new Date().toISOString().slice(0, 10);
 const { A3 } = require('./content/articles3.cjs');
 const { A4 } = require('./content/articles4.cjs');
-const A = A1.concat(A2, A3, A4).filter((a) => !a.publishedAt || a.publishedAt <= today).sort((x, y) => (x.publishedAt || '2026-11-09').localeCompare(y.publishedAt || '2026-11-09'));
+const { A5 } = require('./content/articles5.cjs');
+const A = A1.concat(A2, A3, A4, A5).filter((a) => !a.publishedAt || a.publishedAt <= today).sort((x, y) => (x.publishedAt || '2026-11-09').localeCompare(y.publishedAt || '2026-11-09'));
 const PUB = (a) => a.publishedAt || '2026-11-09';
 const dDe = (d) => d.split('-').reverse().join('.');
 const plain = (h) => h.replace(/<\/(p|li|tr|h2|h3|div)>/g, '\n').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim();
@@ -54,9 +55,9 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : '<meta name="robots" co
 <link rel="canonical" href="${url}"><link rel="alternate" hreflang="de" href="${url}"><link rel="alternate" type="application/rss+xml" title="${BRAND}" href="${B}/feed.xml">
 <link rel="preload" href="/assets/fonts/manrope-600-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/sourcesans3-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css?v=1">
-<link rel="stylesheet" href="/assets/site.css?v=6"><link rel="stylesheet" href="/assets/test.css?v=1">
+<link rel="stylesheet" href="/assets/site.css?v=6"><link rel="stylesheet" href="/assets/test.css?v=1"><link rel="stylesheet" href="/assets/fx.css?v=2">
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })}</script>
-<script src="/assets/site.js?v=1" defer></script>
+<script src="/assets/site.js?v=1" defer></script><script src="/assets/fx.js?v=1" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -70,6 +71,7 @@ ${noindex ? '<meta name="robots" content="noindex">\n' : '<meta name="robots" co
     <a class="cta" href="/krise/">Hilfe in der Krise</a>
   </nav>
 </div></header>
+${article ? '<div class="rp" aria-hidden="true"><i></i></div>' : ''}
 <main id="main">
 ${body}
 </main>
@@ -105,7 +107,7 @@ layout({
   p: '/', title: 'Borderline verständlich erklärt: Wissen, Hilfe, Angehörige | Borderline für alle',
   desc: 'Quellenbasierte Informationen zur Borderline-Persönlichkeitsstörung: erkennen, Diagnose, Therapie, Alltag, Angehörige und Hilfe finden. Sachlich, ohne Stigma.',
   schema: [{ '@type': 'CollectionPage', '@id': B + '/#webpage', url: B + '/', name: BRAND, dateModified: DATE, inLanguage: 'de-DE' }],
-  body: `<section class="hero"><div class="wrap hero__g"><div>
+  body: `<section class="hero"><div class="hero__fx" aria-hidden="true"><i class="e"></i><i class="a"></i><i class="b"></i><i class="c"></i><i class="d"></i><i class="ring"></i><i class="ring r2"></i></div><div class="wrap hero__g"><div>
   <span class="eyebrow">Wissen zur Borderline-Persönlichkeitsstörung</span>
   <h1>Borderline verständlich erklärt. Sachlich, mit Quellen, ohne Stigma.</h1>
   <p class="lede">Für Menschen mit Borderline, für Angehörige und für alle, die mehr wissen möchten: Antworten aus der S3-Leitlinie und von Krankenkassen und Fachgesellschaften.</p>
@@ -116,6 +118,8 @@ layout({
 <ul><li>Telefonseelsorge <b>116 123</b></li><li>Notruf <b>112</b></li><li>Ärztlicher Bereitschaftsdienst <b>116 117</b></li></ul><a class="btn" href="/krise/">Alle Hilfen in der Krise</a></aside>
 </div></section>
 
+<section class="stats" aria-label="Das Portal in Zahlen"><div class="wrap stats__g"><div><b data-count="${A.length}">${A.length}</b><span>Artikel mit Quellen</span></div><div><b data-count="${CATS.length}">${CATS.length}</b><span>Themenbereiche</span></div><div><b data-count="40">40</b><span>Aussagen im Selbsttest</span></div><div><b data-count="${new Set(A.flatMap((a) => a.sources.map((x) => x.u))).size}">${new Set(A.flatMap((a) => a.sources.map((x) => x.u))).size}</b><span>genutzte Fachquellen</span></div></div></section>
+<div class="mq" aria-label="Unsere Quellen"><div class="mq__t" aria-hidden="true">${[1, 2].map(() => ['S3-Leitlinie AWMF', 'DGPPN', 'AOK', 'Techniker Krankenkasse', 'KBV 116117', 'Deutsche Rentenversicherung', 'BApK', 'MSD Manual', 'Gesundheitsportal Österreich', 'TelefonSeelsorge'].map((t) => '<span>' + t + '</span>').join('')).join('')}</div></div>
 <section class="sec"><div class="wrap"><div class="cta-test"><div><h3>Ausführlicher Borderline-Selbsttest</h3><p>40 Aussagen zu den neun Kriterien, anonym im Browser ausgewertet, mit Ergebnis zum Mitnehmen. Eine erste Orientierung, keine Diagnose.</p></div><a class="btn" href="/test/">Test starten</a></div></div></section>
 <section class="sec"><div class="wrap">
   <div class="sec__h"><div><h2>Themen</h2><p>Acht Bereiche, klar gegliedert. Wähle den, der zu Deiner Frage passt.</p></div></div>
