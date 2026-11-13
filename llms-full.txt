@@ -897,3 +897,43 @@ A: In der Regel unterstützt die behandelnde Fachärztin oder der Facharzt, die 
 - Techniker Krankenkasse: Reha bei psychischer Erkrankung (Stand 13.03.2024): https://www.tk.de/techniker/krankheit-und-behandlungen/erkrankungen/behandlungen-und-medizin/psychische-gesundheit/therapie-bei-psychischen-erkrankungen/reha-bei-psychischer-erkrankung-2165022
 - Deutsche Rentenversicherung: Erwerbsminderungsrenten (Stand 2026): https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Allgemeine-Informationen/Rentenarten-und-Leistungen/Erwerbsminderungsrente/erwerbsminderungsrente_node.html
 - AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+
+---
+
+## Schweigepflicht in der Therapie: Was Angehörige erfahren dürfen
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/schweigepflicht-angehoerige-borderline/
+Kategorie: Beziehungen und Angehörige
+Veröffentlicht: 2026-11-13
+
+Kurz gesagt: Die Schweigepflicht gilt auch gegenüber Familienangehörigen. Therapeutinnen dürfen Informationen nur mit wirksamer Entbindung weitergeben, am besten schriftlich. Die Leitlinie sieht vor, Angehörige mit Zustimmung der betroffenen Person einzubeziehen. Bei akuter Gefahr gibt es Ausnahmen.
+
+### Der Grundsatz
+Nach dem Deutschen Ärzteblatt muss die Schweigepflicht auch gegenüber Familienangehörigen eingehalten werden, auch gegenüber Ehepartnern. Psychotherapeuten sollten sich vom Patienten ausdrücklich, am besten schriftlich, von der Schweigepflicht entbinden lassen, wenn sie Daten weitergeben sollen. Ohne gesetzliche Pflicht sind sie zur Offenbarung nur befugt, wenn eine wirksame Entbindung vorliegt. Der zitierte Beitrag stammt aus dem Archiv von 2009; Einzelfragen sollten Sie deshalb immer mit der Therapeutin oder einer Beratungsstelle klären.
+
+### Angehörige einbeziehen, mit Deiner Zustimmung
+Die S3-Leitlinie sieht vor, dass die Diagnose Familie, Partnern oder anderen Bezugspersonen nur erläutert wird, wenn die betroffene Person zustimmt. Mit Einverständnis sollen Angehörige in Krisenpläne eingebunden und über einen hilfreichen Umgang beraten werden. Wenn Du Deinen Angehörigen mehr Einblick geben möchtest, kannst Du das mit Deiner Therapeutin besprechen und eine Entbindung für bestimmte Inhalte und Personen vereinbaren. Mehr: Krisenplan .
+
+### Wenn Gefahr besteht: Ausnahmen
+Die Schweigepflicht darf im Einzelfall nach dem Prinzip der Güterabwägung durchbrochen werden. Bei einem „rechtfertigenden Notstand“, also einer Gefahr für Leben, Leib, Freiheit oder ein anderes Rechtsgut, dürfen Psychotherapeuten Geheimnisse offenbaren, um die Gefahr abzuwenden. Laut Ärzteblatt ist es zulässig, bei Suizidgefahr die Angehörigen zu informieren. Auch bei Gefahr für andere sowie bei festgestellter Kindesmisshandlung gibt es Ausnahmen. Dieser Schritt ist eine Abwägung im Einzelfall und die Ausnahme.
+ In akuter Gefahr nicht auf Information warten: Notruf 112 , Telefonseelsorge 116 123 (kostenfrei).
+
+### Bei Jugendlichen
+Bei minderjährigen Patienten ist laut Ärzteblatt das Geheimhaltungsinteresse des Kindes gegen den Anspruch der Eltern auf Mitwissen abzuwägen. Ab einem Alter von etwa 14 bis 15 Jahren ist das Patientengeheimnis zu beachten. Eltern sollten auf die Selbstbestimmungsfähigkeit des Kindes hingewiesen werden.
+
+### Für Angehörige
+Angehörige und Begleitpersonen sollten über die Schweigepflicht informiert werden, die auch ihnen gegenüber besteht. Das bedeutet nicht, dass Du keine Hilfe bekommst: Angehörige haben nach der Leitlinie Anspruch auf professionelle Hilfsangebote, auch ohne dass Details der Therapie mitgeteilt werden ( Rat für Angehörige , Selbsthilfe und Beratung ).
+ Keine Rechtsberatung. Dieser Artikel fasst Aussagen aus Fachquellen zusammen. Für Ihren Fall: Therapeutin, Psychotherapeutenkammer oder Rechtsberatung.
+
+### Häufige Fragen
+F: Darf die Therapeutin mit meiner Familie sprechen?
+A: Nur mit Deiner Entbindung von der Schweigepflicht, am besten schriftlich, oder in Ausnahmefällen bei Gefahr. Die Leitlinie sieht den Einbezug von Angehörigen vor, wenn Du zustimmst.
+F: Erfahren meine Eltern von meiner Therapie, wenn ich minderjährig bin?
+A: Das ist eine Abwägung im Einzelfall. Ab etwa 14 bis 15 Jahren ist das Patientengeheimnis zu beachten, so das Ärzteblatt.
+F: Als Angehörige: Bekomme ich Informationen über die Behandlung?
+A: Nur, wenn die betroffene Person zustimmt. Beratung und Unterstützung für Angehörige gibt es unabhängig davon, zum Beispiel über Selbsthilfe und SeeleFon.
+
+### Quellen
+- Deutsches Ärzteblatt: Ethik in der Psychotherapie, Schweigepflicht (Sonnenmoser, Archivbeitrag von 2009): https://www.aerzteblatt.de/archiv/ethik-in-der-psychotherapie-schweigepflicht-unterschiedliche-auslegungen-325f7e14-94a3-4c36-b980-3f872968206e
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+- BApK: SeeleFon, Telefon- und Mailberatung: https://www.bapk.de/angebote/seelefon.html
