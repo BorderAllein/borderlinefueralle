@@ -937,3 +937,45 @@ A: Nur, wenn die betroffene Person zustimmt. Beratung und Unterstützung für An
 - Deutsches Ärzteblatt: Ethik in der Psychotherapie, Schweigepflicht (Sonnenmoser, Archivbeitrag von 2009): https://www.aerzteblatt.de/archiv/ethik-in-der-psychotherapie-schweigepflicht-unterschiedliche-auslegungen-325f7e14-94a3-4c36-b980-3f872968206e
 - AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
 - BApK: SeeleFon, Telefon- und Mailberatung: https://www.bapk.de/angebote/seelefon.html
+
+---
+
+## Borderline, ADHS, bipolar oder PTBS? So grenzen Fachleute ab
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/borderline-abgrenzung-adhs-bipolar-ptbs/
+Kategorie: Diagnose
+Veröffentlicht: 2026-11-16
+
+Kurz gesagt: Beschwerden wie Impulsivität, Stimmungsschwankungen und Anspannung kommen bei mehreren Erkrankungen vor. Die S3-Leitlinie führt ADHS, bipolare Störungen, PTBS und komplexe PTBS, Depression und weitere Diagnosen als Differenzialdiagnosen auf. Typisch für Borderline: Impulsivität und Wut sind meist mit emotionalem Stress verbunden, Stimmungen sind reaktiv und kurzlebig.
+
+### Warum die Abgrenzung schwerfällt
+Menschen mit Borderline-Persönlichkeitsstörung haben laut Leitlinie häufig weitere psychische Erkrankungen: Depressive Störungen und Angststörungen liegen über die Lebenszeit bei über 80 Prozent, häufig sind außerdem PTBS, ADHS, Substanzabhängigkeit, bipolare Störungen, dissoziative Störungen und Essstörungen. Die Leitlinie unterscheidet also zwei Fragen: Welche Diagnose erklärt die Beschwerden (Differenzialdiagnose), und welche kommt zusätzlich vor (Komorbidität)? Beides klären Fachleute in der Diagnostik ( Diagnoseablauf ).
+
+### Borderline und ADHS
+Laut Leitlinie ist bei der Borderline-Persönlichkeitsstörung impulsives oder aggressives Verhalten meist mit emotionalem Stress verbunden. Bei ADHS fehlen die zwischenmenschlichen Schwierigkeiten, die für Borderline typisch sind, dafür stehen kognitive Impulsivität, motorische Hyperaktivität und beschleunigtes Sprechen im Vordergrund. ADHS gehört zugleich zu den häufigen Begleiterkrankungen der BPS. Konkrete Zahlen zur Häufigkeit des gemeinsamen Auftretens nennt die Leitlinie nicht. Hintergrund zu ADHS bei Erwachsenen: ADHS Begleitung .
+
+### Borderline und bipolare Störung
+Die Leitlinie hält fest, dass die Stimmungsschwankungen bei BPS weniger nachhaltig und stärker reaktiv sind als bei bipolaren Störungen. Passend dazu beschreibt das Diagnosekriterium bei Borderline Verstimmungen, die gewöhnlich einige Stunden und nur selten mehr als einige Tage dauern ( die neun Kriterien ). Eine besondere Abgrenzung nennt die Leitlinie zur Bipolar-II-Störung. Weil beide Erkrankungen unterschiedlich behandelt werden, ist die fachliche Klärung wichtig.
+
+### Borderline und PTBS, komplexe PTBS
+Auch PTBS und komplexe PTBS führt die Leitlinie als Differenzialdiagnosen auf und zugleich als häufige Begleiterkrankungen. Liegt neben der BPS eine PTBS vor, soll nach der Leitlinie eine integrierte oder traumaspezifisch angepasste Behandlung erfolgen, zum Beispiel eine DBT mit traumaspezifischer Erweiterung. Mehr zu frühen Belastungen als Risikofaktor: Ursachen .
+
+### Weitere Abgrenzungen
+Die Leitlinie nennt außerdem depressive Erkrankungen, Angststörungen, antisoziale und andere Persönlichkeitsstörungen, Autismus-Spektrum-Störungen, dissoziative Störungen, psychotische Störungen und die Frage der Geschlechtsdysphorie. Selbstverletzendes Verhalten gilt dabei als Symptom, nicht als eigene Diagnose. Nach dem Gesundheitsportal Österreich gehört zur Diagnostik zudem der Ausschluss organischer Ursachen und von Drogeneinfluss.
+
+### Was das für Dich heißt
+Selbst abgrenzen geht nicht. Wer sich in mehreren Beschreibungen wiederfindet, hat nicht automatisch mehrere Erkrankungen. Mehrere Diagnosen können nebeneinander bestehen, und manche Beschwerden gehören zu einer anderen Erkrankung. Eine psychotherapeutische Sprechstunde klärt das ( so kommst Du zu einem Termin ). Unser Selbsttest kann dabei höchstens eine Orientierung geben.
+
+### Häufige Fragen
+F: Wie unterscheide ich Borderline und bipolare Störung?
+A: Nach der Leitlinie sind die Stimmungsschwankungen bei Borderline weniger nachhaltig und stärker reaktiv. Die Abgrenzung gehört in fachliche Diagnostik.
+F: Kann man Borderline und ADHS gleichzeitig haben?
+A: Ja. Die Leitlinie nennt ADHS als häufige Begleiterkrankung der Borderline-Persönlichkeitsstörung. Konkrete Zahlen nennt sie nicht.
+F: Was ist der Unterschied zwischen Borderline und PTBS?
+A: Beide haben Überschneidungen, und beide können gleichzeitig vorliegen. Die Leitlinie empfiehlt dann eine integrierte, traumaspezifisch angepasste Behandlung.
+
+### Quellen
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+- Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
+- MSD Manual, Ausgabe für Patienten: Borderline-Persönlichkeitsstörung (Stand Jan. 2026): https://www.msdmanuals.com/de/heim/psychische-gesundheitsst%C3%B6rungen/pers%C3%B6nlichkeitsst%C3%B6rungen/borderline-pers%C3%B6nlichkeitsst%C3%B6rung-bpd
+- neurologen-und-psychiater-im-netz.org (DGPPN): Borderline-Störung: https://www.neurologen-und-psychiater-im-netz.org/psychiatrie-psychosomatik-psychotherapie/stoerungen-erkrankungen/borderline-stoerung/
