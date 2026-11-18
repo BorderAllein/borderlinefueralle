@@ -979,3 +979,41 @@ A: Beide haben Überschneidungen, und beide können gleichzeitig vorliegen. Die 
 - Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
 - MSD Manual, Ausgabe für Patienten: Borderline-Persönlichkeitsstörung (Stand Jan. 2026): https://www.msdmanuals.com/de/heim/psychische-gesundheitsst%C3%B6rungen/pers%C3%B6nlichkeitsst%C3%B6rungen/borderline-pers%C3%B6nlichkeitsst%C3%B6rung-bpd
 - neurologen-und-psychiater-im-netz.org (DGPPN): Borderline-Störung: https://www.neurologen-und-psychiater-im-netz.org/psychiatrie-psychosomatik-psychotherapie/stoerungen-erkrankungen/borderline-stoerung/
+
+---
+
+## Borderline und Sucht: Wie häufig, was die Leitlinie empfiehlt
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/borderline-und-sucht/
+Kategorie: Behandlung
+Veröffentlicht: 2026-11-18
+
+Kurz gesagt: Nach der S3-Leitlinie weist etwa die Hälfte bis zwei Drittel der Menschen mit Borderline-Persönlichkeitsstörung aktuell oder früher eine Abhängigkeitserkrankung auf. Schwere Suchtstörungen, die die Psychotherapie gefährden, sollen zuerst behandelt werden. Borderline-spezifische Verfahren wie DBT zeigen positive Effekte auch auf Suchtsymptome.
+
+### Wie häufig ist Sucht bei Borderline?
+Die Leitlinie nennt für die Gruppe der Menschen mit BPS, dass etwa die Hälfte bis zwei Drittel aktuell oder in der Vergangenheit eine Abhängigkeitserkrankung hat. Häufig genannt werden Alkohol, Cannabis, Opiate, Beruhigungsmittel, Kokain und Halluzinogene. Substanzkonsum kann dabei auch eine Form sein, mit Anspannung umzugehen ( Impulsivität als Kriterium ).
+
+### Warum Substanzen die Diagnostik erschweren
+Zur Diagnostik gehört der Ausschluss von Drogeneinnahme als Auslöser der Beschwerden (Gesundheitsportal Österreich). Unter Alkohol und Drogen können Stimmung, Impulsivität und Wahrnehmung stark verändert sein. Deshalb fragt auch unser Selbsttest , ob Erfahrungen auch ohne Konsum bestehen.
+
+### Was die Leitlinie zur Behandlung sagt
+Liegen schwere substanzbezogene Störungen vor, die die Psychotherapie der BPS gefährden, soll deren Behandlung vorgezogen werden.
+ Borderline-spezifische Behandlungen wie die DBT zeigen positive Effekte auf Borderline- und Suchtsymptome.
+ Auf Medikamente mit Abhängigkeitspotenzial , insbesondere Benzodiazepine, Pregabalin und Z-Substanzen, soll in der Dauertherapie verzichtet werden.
+ Mehr zur medikamentösen Seite: Borderline und Medikamente .
+
+### Hilfe finden
+Der Weg führt über die psychotherapeutische Sprechstunde oder die Hausärztin, den Hausarzt ( Therapieplatz finden ). Suchtberatungsstellen vor Ort sind eine weitere Anlaufstelle. In akuter Gefahr: Notruf 112 ; zum Reden Telefonseelsorge 116 123 (kostenfrei).
+ Nicht allein absetzen. Wer regelmäßig Beruhigungsmittel oder andere Medikamente nimmt, sollte sie nur nach ärztlicher Rücksprache verändern.
+
+### Häufige Fragen
+F: Wie häufig ist Sucht bei Borderline?
+A: Laut Leitlinie hat etwa die Hälfte bis zwei Drittel aktuell oder früher eine Abhängigkeitserkrankung.
+F: Was wird zuerst behandelt, Sucht oder Borderline?
+A: Schwere Suchterkrankungen, die die Psychotherapie gefährden, sollen laut Leitlinie vorgezogen werden. Sonst sind borderline-spezifische Verfahren wie DBT möglich.
+F: Warum sollen Beruhigungsmittel vermieden werden?
+A: Die Leitlinie empfiehlt, auf Medikamente mit Abhängigkeitspotenzial wie Benzodiazepine, Pregabalin und Z-Substanzen in der Dauertherapie zu verzichten.
+
+### Quellen
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+- Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
