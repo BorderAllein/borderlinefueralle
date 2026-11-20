@@ -1017,3 +1017,49 @@ A: Die Leitlinie empfiehlt, auf Medikamente mit Abhängigkeitspotenzial wie Benz
 ### Quellen
 - AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
 - Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
+
+---
+
+## Klinik oder Tagesklinik bei Borderline: Wann stationär, wie lange?
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/klinik-tagesklinik-borderline/
+Kategorie: Behandlung
+Veröffentlicht: 2026-11-20
+
+Kurz gesagt: Nach der S3-Leitlinie soll die Behandlung im Allgemeinen ambulant erfolgen. Stationär oder teilstationär ist sie sinnvoll zur kurzzeitigen Krisenintervention oder in zeitlich definierten, störungsspezifischen Programmen. Lange, unspezifische Aufenthalte sollen vermieden werden. Die AOK nennt für tages- und vollstationäre Programme etwa zehn Wochen.
+
+### Ambulant zuerst
+Die Leitlinie empfiehlt, die Behandlung der Borderline-Persönlichkeitsstörung im Allgemeinen ambulant durchzuführen. Stationäre und teilstationäre Angebote ergänzen sie in bestimmten Situationen ( Behandlung im Überblick ).
+
+### Wann ist stationär oder teilstationär sinnvoll?
+Krisenintervention: kurzzeitige Aufenthalte, wenn eine Krise ambulant nicht zu tragen ist, etwa bei akuter Gefährdung. Ziel ist die Krisenbewältigung.
+ Elektive Programme: länger dauernde, aber zeitlich klar definierte, störungsspezifische Behandlungsprogramme, die ambulante Psychotherapie einleiten oder unterstützen und Verhaltens- und Selbstmanagement trainieren.
+ Akute Gefahr: Notruf 112 oder nächste Notaufnahme. Telefonseelsorge 116 123 (kostenfrei). Mehr: Hilfe in der Krise .
+
+### Tagesklinik und vollstationär
+Die AOK beschreibt zwei Formen: die tagesstationäre Behandlung, montags bis freitags von morgens bis nachmittags, und die vollstationäre Behandlung, bei der Patientinnen und Patienten im Krankenhaus bleiben. Für beide nennt die AOK eine Dauer von etwa zehn Wochen. Dabei ist von Programmen die Rede, die zeitlich begrenzt sind.
+
+### Was die Leitlinie vermeiden will
+Längere, unspezifische stationäre Aufenthalte ohne strukturierte, borderline-spezifische Angebote sollen vermieden werden. Als Grund nennt die Leitlinie das Risiko der Hospitalisierung, gemeint ist die Gewöhnung an den stationären Rahmen (Erläuterung von uns).
+
+### Worauf Du bei der Klinik achten kannst
+Gibt es ein störungsspezifisches Konzept für Borderline, nicht nur allgemeine Psychiatrie?
+ Sind die Behandelnden in der Methode fortgebildet und erhalten Supervision? Das fordert die Leitlinie ausdrücklich, ebenso Ressourcen dafür in den Einrichtungen.
+ Wie ist die Anbindung nach dem Aufenthalt an ambulante Therapie geregelt?
+ Diese Fragen sind unsere Anregung, abgeleitet aus den Leitlinien-Empfehlungen. Eine Klinikempfehlung können wir nicht geben.
+
+### Wie komme ich hin?
+Der Weg führt über Fachärztin oder Facharzt, die Hausarztpraxis oder die psychotherapeutische Sprechstunde, in akuter Krise über die Notaufnahme ( Therapieplatz finden ). Für die Zeit danach, wenn es um Alltag und Beruf geht, kann eine Reha ein weiterer Baustein sein.
+
+### Häufige Fragen
+F: Muss man bei Borderline in die Klinik?
+A: Nein. Die Leitlinie sieht die Behandlung im Allgemeinen ambulant vor. Stationär oder teilstationär kommt zur Krisenintervention oder für zeitlich definierte, störungsspezifische Programme infrage.
+F: Wie lange dauert ein Klinikaufenthalt?
+A: Die AOK nennt für tages- und vollstationäre Behandlung etwa zehn Wochen. Die Leitlinie will längere, unspezifische Aufenthalte vermeiden.
+F: Was ist der Unterschied zwischen Tagesklinik und Klinik?
+A: In der Tagesklinik wird montags bis freitags tagsüber behandelt, vollstationär bleibt man im Krankenhaus (AOK).
+
+### Quellen
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+- AOK: Was ist Borderline? Symptome und Behandlung (23.09.2022): https://www.aok.de/pk/magazin/koerper-psyche/psychologie/was-ist-borderline-symptome-und-behandlung/
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung (Reg.-Nr. 038-015, Version 2.0 vom 14.11.2022; Gültigkeit abgelaufen, in Überarbeitung): https://register.awmf.org/de/leitlinien/detail/038-015
