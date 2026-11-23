@@ -1063,3 +1063,47 @@ A: In der Tagesklinik wird montags bis freitags tagsüber behandelt, vollstation
 - AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
 - AOK: Was ist Borderline? Symptome und Behandlung (23.09.2022): https://www.aok.de/pk/magazin/koerper-psyche/psychologie/was-ist-borderline-symptome-und-behandlung/
 - AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung (Reg.-Nr. 038-015, Version 2.0 vom 14.11.2022; Gültigkeit abgelaufen, in Überarbeitung): https://register.awmf.org/de/leitlinien/detail/038-015
+
+---
+
+## Borderline bei Jugendlichen: Diagnose, Behandlung und Rolle der Eltern
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/borderline-jugendliche-eltern/
+Kategorie: Borderline erkennen
+Veröffentlicht: 2026-11-23
+
+Kurz gesagt: Nach der S3-Leitlinie kann die Diagnose nach fachgerechter Diagnostik schon ab 12 Jahren gestellt werden. Jugendliche von 14 bis 18 sollen eine strukturierte, borderline-spezifische Psychotherapie erhalten, Eltern und Bezugspersonen sollen einbezogen werden. Selbstbericht-Fragebögen reichen bei Jugendlichen nicht, es braucht ein klinisches Interview.
+
+### Wie häufig ist Borderline im Jugendalter?
+Bevölkerungsrepräsentative Studien finden bei Jugendlichen eine Häufigkeit von 1 bis 3 Prozent. In klinischen Behandlungskontexten liegt der Anteil höher; die Leitlinie nennt bei Jugendlichen bis zu 35,6 Prozent.
+
+### Diagnose ab 12 Jahren, nur mit Diagnostik
+Die Leitlinie empfiehlt, die Diagnose nach fachgerechter Diagnostik auch bei Jugendlichen ab 12 Jahren zu stellen, wenn die Kriterien erfüllt sind, damit frühzeitig passende Hilfe möglich wird. Eine Abklärung soll erwogen werden bei wiederholtem selbstschädigendem Verhalten, erheblicher emotionaler Instabilität, mehreren gleichzeitigen psychischen Störungen, ausbleibendem Therapieerfolg oder stark beeinträchtigtem Alltag. Bei Jugendlichen ist stets ein klinisches Interview nötig, weil Selbstbericht-Fragebögen sehr empfindlich sind und zu vielen falsch-positiven Ergebnissen führen können. Unser Selbsttest ist deshalb ausdrücklich nur eine Orientierung für Erwachsene und keine Diagnose.
+
+### Behandlung nach Altersgruppe
+Alter Empfehlung der Leitlinie 
+ 14 bis 18 Jahre Strukturierte, borderline-spezifische Psychotherapie, ausgerichtet auf die Altersgruppe. 
+ unter 14 Jahre Psychotherapeutische Unterstützung und Begleitung; altersangepasste, borderline-spezifische Methoden können eingesetzt werden. Angehörige sollen einbezogen werden. 
+ Auch bei Jugendlichen gilt: Die Behandlung findet primär ambulant statt. Therapeutische Wohngruppen können in der Adoleszenz und bei jungen Erwachsenen einen stabilen Rahmen bieten. Das Gesundheitsportal Österreich nennt für das Jugendalter zusätzlich die psychoanalytisch-interaktionelle Methode (PIM).
+
+### Die Rolle der Eltern
+Angehörige und Bezugspersonen sollen laut Leitlinie bei Betroffenen unter 14 Jahren einbezogen werden und bei der Behandlungsplanung für Betroffene unter 18 Jahren kontinuierlich. Das heißt nicht, dass Eltern alles erfahren: Bei Minderjährigen wird das Geheimhaltungsinteresse des Kindes gegen den Anspruch der Eltern auf Mitwissen abgewogen ( Schweigepflicht ). Die Leitlinie empfiehlt außerdem, beim Besprechen von Belastungen Schuldzuweisungen möglichst zu vermeiden ( Ursachen ).
+
+### Wo Eltern Unterstützung finden
+Eltern, die bei ihrem Kind eine Borderline-Persönlichkeitsstörung oder eine andere psychische Erkrankung vermuten, finden laut TK Unterstützung über die Beratungsstellensuche der Bundeskonferenz für Erziehungsberatung (bke). Weitere Anlaufstellen: Rat für Angehörige und Selbsthilfe und Beratung . In akuter Gefahr: Notruf 112 , Telefonseelsorge 116 123 (kostenfrei, siehe Hilfe in der Krise ).
+
+### Häufige Fragen
+F: Ab welchem Alter kann Borderline diagnostiziert werden?
+A: Nach fachgerechter Diagnostik laut S3-Leitlinie ab 12 Jahren, wenn die Kriterien erfüllt sind.
+F: Reicht ein Online-Test bei Jugendlichen?
+A: Nein. Bei Jugendlichen ist ein klinisches Interview nötig, Selbstbericht-Verfahren führen zu vielen falsch-positiven Ergebnissen.
+F: Werden Eltern in die Therapie einbezogen?
+A: Ja, nach der Leitlinie bei unter 14-Jährigen und kontinuierlich bei der Behandlungsplanung für unter 18-Jährige. Die Schweigepflicht des Jugendlichen bleibt zu beachten.
+F: Wo bekomme ich als Elternteil Beratung?
+A: Zum Beispiel über die Beratungsstellensuche der Bundeskonferenz für Erziehungsberatung (bke) und über Angehörigen-Angebote wie das SeeleFon des BApK.
+
+### Quellen
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+- Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
+- Techniker Krankenkasse: Ohne Halt – leben mit der Borderline-Persönlichkeitsstörung (Stand 01.09.2023): https://www.tk.de/techniker/krankheit-und-behandlungen/erkrankungen/behandlungen-und-medizin/psychische-gesundheit/weitere-psychische-erkrankungen/leben-mit-der-borderline-persoenlichkeitsstoerung-2016414
+- BApK: SeeleFon, Telefon- und Mailberatung: https://www.bapk.de/angebote/seelefon.html
