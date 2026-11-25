@@ -1107,3 +1107,42 @@ A: Zum Beispiel über die Beratungsstellensuche der Bundeskonferenz für Erziehu
 - Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
 - Techniker Krankenkasse: Ohne Halt – leben mit der Borderline-Persönlichkeitsstörung (Stand 01.09.2023): https://www.tk.de/techniker/krankheit-und-behandlungen/erkrankungen/behandlungen-und-medizin/psychische-gesundheit/weitere-psychische-erkrankungen/leben-mit-der-borderline-persoenlichkeitsstoerung-2016414
 - BApK: SeeleFon, Telefon- und Mailberatung: https://www.bapk.de/angebote/seelefon.html
+
+---
+
+## Dissoziation bei Borderline: Wenn man neben sich steht
+
+URL: https://xn--borderlinefralle-tzb.de/artikel/dissoziation-borderline/
+Kategorie: Borderline erkennen
+Veröffentlicht: 2026-11-25
+
+Kurz gesagt: Zu den neun Borderline-Kriterien gehören vorübergehende, durch Belastung ausgelöste paranoide Vorstellungen oder schwere dissoziative Symptome, also das Gefühl, nicht da oder sich selbst fremd zu sein. Sie sind laut MSD Manual vorübergehend und in der Regel nicht schwerwiegend genug für eine eigene Störung. Dissoziative Störungen können zusätzlich vorliegen.
+
+### Was ist Dissoziation?
+Das MSD Manual beschreibt Dissoziation als das Gefühl, nicht da oder sich selbst entfremdet zu sein. Bei Menschen mit Borderline-Persönlichkeitsstörung können unter starkem Stress kurze paranoide Schübe oder dissoziative Symptome auftreten. Diese Schübe sind vorübergehend und laut MSD in der Regel nicht schwerwiegend genug, um als eigene Störung zu gelten. Das Gesundheitsportal Österreich nennt als Beispiel Derealisation, das Gefühl, die Umgebung sei unwirklich. Das DGPPN-Portal beschreibt außerdem eine gestörte Körperwahrnehmung als mögliches Erleben.
+
+### Dissoziation als Kriterium
+Als neuntes DSM-5-Kriterium führt die Leitlinie „vorübergehende, durch Belastungen ausgelöste paranoide Vorstellungen oder schwere dissoziative Symptome“ auf. Das Kriterium allein macht keine Diagnose, es zählt zusammen mit mindestens vier weiteren ( die neun Kriterien ).
+
+### Dissoziative Störungen und Begleiterkrankungen
+Dissoziative Störungen sind eine eigene Diagnosegruppe. Nach der Leitlinie gehören sie zu den häufigen Begleiterkrankungen der Borderline-Persönlichkeitsstörung und werden in der Differenzialdiagnostik berücksichtigt, ebenso PTBS ( Borderline, ADHS, bipolar oder PTBS? ). Ob dissoziative Erfahrungen Teil der Borderline-Symptomatik sind oder eine zusätzliche Störung vorliegt, klären Fachleute.
+
+### Was bei Dissoziation hilft
+Psychotherapie: Die Leitlinie empfiehlt eine strukturierte, borderline-spezifische Psychotherapie. In der DBT gehören laut DGPPN-Portal Stresstoleranz und Körperwahrnehmung zum Fertigkeitentraining ( Fertigkeitentraining ).
+ Medikamente: Sie sind nicht die primäre Therapie. Für ausgeprägte dissoziative und paranoide Symptome nennt die Leitlinie unter den medikamentösen Optionen Antipsychotika, zeitlich begrenzt und ergänzend. Das entscheiden Ärztinnen und Ärzte im Einzelfall ( Borderline und Medikamente ).
+ Krisenplan: Gemeinsam mit der Therapeutin lässt sich festlegen, wer Dich in solchen Momenten unterstützt ( Krisenplan ).
+ Keine Anleitung. Konkrete Übungen für akute Momente gehören in die Therapie. Wenn es Dir gerade schlecht geht: Telefonseelsorge 116 123 (kostenfrei), Notruf 112 .
+
+### Häufige Fragen
+F: Ist Dissoziation immer ein Zeichen von Borderline?
+A: Nein. Dissoziative Symptome kommen auch bei anderen Erkrankungen vor, etwa bei PTBS oder dissoziativen Störungen. Die Einordnung gehört in fachliche Diagnostik.
+F: Wie lange dauert dissoziatives Erleben bei Borderline?
+A: Nach dem MSD Manual sind die Schübe vorübergehend und werden durch Stress ausgelöst.
+F: Gibt es ein Medikament gegen Dissoziation?
+A: Die Leitlinie nennt Antipsychotika als Option bei ausgeprägten Symptomen, zeitlich begrenzt und ergänzend. Standard ist die Psychotherapie.
+
+### Quellen
+- MSD Manual, Ausgabe für Patienten: Borderline-Persönlichkeitsstörung (Stand Jan. 2026): https://www.msdmanuals.com/de/heim/psychische-gesundheitsst%C3%B6rungen/pers%C3%B6nlichkeitsst%C3%B6rungen/borderline-pers%C3%B6nlichkeitsst%C3%B6rung-bpd
+- AWMF: S3-Leitlinie Borderline-Persönlichkeitsstörung, Langfassung (PDF): https://register.awmf.org/assets/guidelines/038-015l_S3_Borderline-Persoenlichkeitsst%C3%B6rungen_2022-11-abgelaufen.pdf
+- Gesundheitsportal Österreich: Emotional instabile Persönlichkeitsstörung (Stand 18.10.2022): https://www.gesundheit.gv.at/krankheiten/psyche/borderline.html
+- neurologen-und-psychiater-im-netz.org (DGPPN): Borderline-Störung, Therapie: https://www.neurologen-und-psychiater-im-netz.org/psychiatrie-psychosomatik-psychotherapie/stoerungen-erkrankungen/borderline-stoerung/therapie/
